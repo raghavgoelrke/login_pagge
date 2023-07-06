@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.block-labels{
+    display: block;
+/* here the diplay is used to define how the text will be displayed in the page ie will it be displayed as in line with each other or will it be displayed in blocks 
+
+the text as default is displayed as in line with each other */
+font-size: 1.2rem;
+/* we use rem as the unit here as there can be different no of pixels in different displays so rem can work for all different types of displays */
+margin-bottom: 1rem;
+margin-top: 1rem;
+}
+
+h1{
+
+    text-align: center;
+}
+
+/* form{
+    background-color: rgb(46, 136, 192);
+} */
+
+.my-form{
+    background-color: rgb(230, 139, 111);
+    height: 100vh;
+/* in different devices with dfferent sizes the web page might have a scroll bar if we use a highet pixel no for the height of the form but if we use 100vh{vertical height} then this will be in center of the screen for all devices of different sizes */
+    display: flex;
+    /* The flex box is CSS Layout Design build using display:flex property. Flexbox is used to build one-dimensional layout in css. One dimensional means flexbox can build layout in one dimension ( either row or column ) at one time. */
+    flex-direction: column;
+    align-items: center ;
+    /* align-item is used here to align the whole text in the centre horizontally  */
+    justify-content: center;
+    /* the justify-content: is used here to align the whole text in the center vertically; */
+
+    
+}
+#sign-btn{
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+
+    background-color:green ;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+ #sign-btn:hover{
+    background-color: rgb(54, 163, 54);
+ }
+
+ #login-checkbox{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: rgb(104, 42, 42);
+
+ }
+
+ .my-border{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px black;
+    background-color: rgb(46, 136, 192);
+ }
+input{
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+/* for the new login page */
+
+
+.new-account{
+    font-size: 1rem;
+    padding: 5px;
+    color:black ;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: inline  ;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+   text-decoration: none;
+
+}
+.new-account:hover{
+    background: rgb(131, 152, 219) ;
+    color: white;
+}
+
+/* here we  can either mentin the a tag or we can mention the class that we specified in the a tag that is class= creatanewaccount */
+
+.form-inputs{
+
+    display: flex;
+    flex-direction: column;
+    align-items:  enter;
+    justify-content: center;
+    margin: 18px;
+
+
+}
+
+.form-inputs input{
+    padding: 10px;
+    font: size 12px; 
+    width: 95%;
+}
